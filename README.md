@@ -13,8 +13,8 @@
 
 
 2. After creating the above types, we will push Entities and Process related information using CustomHookKafka.java
-	2.1: Compile CustomHookKafka.java as below from the host where you have Atlas Client package installed.
-	     $JAVA_HOME/bin/javac -cp .:`hadoop classpath`:/usr/hdp/<Version>/atlas/server/webapp/atlas/WEB-INF/lib/*: CustomHookKafka.java
+  2.1: Compile CustomHookKafka.java as below from the host where you have Atlas Client package installed.
+       $JAVA_HOME/bin/javac -cp .:`hadoop classpath`:/usr/hdp/<Version>/atlas/server/webapp/atlas/WEB-INF/lib/*: CustomHookKafka.java
   2.2: Create atlas-application.properties, you may copy from /etc/hive/conf/atlas-application.properties to dir where Java code is present and replace  atlas.hook.hive to atlas.hook.custom
   2.3 Run Java code after compilation
        $JAVA_HOME/bin/java -cp .:`hadoop classpath`:/usr/hdp/<Version>/atlas/server/webapp/atlas/WEB-INF/lib/*: CustomHookKafka
